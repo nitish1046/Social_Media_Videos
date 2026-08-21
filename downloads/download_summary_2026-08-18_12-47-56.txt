@@ -1,0 +1,88 @@
+Run: 2026-08-18_12-47-56
+Destination folder: C:\Users\Krishna\OneDrive\Pictures\Screenshots\temp\1_ Social_Media_Videos_Downloader_Project\downloads
+Total links: 2
+Downloaded OK: 1
+Failed: 1
+
+--- Successful downloads ---
+[YouTube] [Short] 1.31 MB -> C:\Users\Krishna\OneDrive\Pictures\Screenshots\temp\1_ Social_Media_Videos_Downloader_Project\downloads\Cheese Burst Mushroom Tikka Roti Pizza🍕🤤#shorts #viral #reels #trending #ytshorts #youtube #yt #reel.mp4
+
+--- Failed downloads ---
+[YouTube] https://youtube.com/shorts/Y0fOQVZw0Qc?si=LyUC-qR5NbLcWpEu  (DownloadError: [0;31mERROR:[0m unable to download video data: HTTP Error 403: Forbidden)
+    Traceback (most recent call last):
+      File "C:\Users\Krishna\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\yt_dlp\networking\_urllib.py", line 419, in _send
+        res = opener.open(urllib_req, timeout=self._calculate_timeout(request))
+      File "C:\Users\Krishna\AppData\Local\Python\pythoncore-3.14-64\Lib\urllib\request.py", line 493, in open
+        response = meth(req, response)
+      File "C:\Users\Krishna\AppData\Local\Python\pythoncore-3.14-64\Lib\urllib\request.py", line 602, in http_response
+        response = self.parent.error(
+            'http', request, response, code, msg, hdrs)
+      File "C:\Users\Krishna\AppData\Local\Python\pythoncore-3.14-64\Lib\urllib\request.py", line 531, in error
+        return self._call_chain(*args)
+               ~~~~~~~~~~~~~~~~^^^^^^^
+      File "C:\Users\Krishna\AppData\Local\Python\pythoncore-3.14-64\Lib\urllib\request.py", line 464, in _call_chain
+        result = func(*args)
+      File "C:\Users\Krishna\AppData\Local\Python\pythoncore-3.14-64\Lib\urllib\request.py", line 611, in http_error_default
+        raise HTTPError(req.full_url, code, msg, hdrs, fp)
+    urllib.error.HTTPError: HTTP Error 403: Forbidden
+    
+    The above exception was the direct cause of the following exception:
+    
+    Traceback (most recent call last):
+      File "C:\Users\Krishna\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\yt_dlp\YoutubeDL.py", line 3589, in process_info
+        success, real_download = self.dl(temp_filename, info_dict)
+                                 ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "C:\Users\Krishna\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\yt_dlp\YoutubeDL.py", line 3324, in dl
+        return fd.download(name, new_info, subtitle)
+               ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "C:\Users\Krishna\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\yt_dlp\downloader\common.py", line 480, in download
+        ret = self.real_download(filename, info_dict)
+      File "C:\Users\Krishna\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\yt_dlp\downloader\http.py", line 362, in real_download
+        establish_connection()
+        ~~~~~~~~~~~~~~~~~~~~^^
+      File "C:\Users\Krishna\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\yt_dlp\downloader\http.py", line 119, in establish_connection
+        ctx.data = self.ydl.urlopen(request)
+                   ~~~~~~~~~~~~~~~~^^^^^^^^^
+      File "C:\Users\Krishna\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\yt_dlp\YoutubeDL.py", line 4305, in urlopen
+        return self._request_director.send(req)
+               ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+      File "C:\Users\Krishna\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\yt_dlp\networking\common.py", line 117, in send
+        response = handler.send(request)
+      File "C:\Users\Krishna\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\yt_dlp\networking\_helper.py", line 194, in wrapper
+        return func(self, *args, **kwargs)
+      File "C:\Users\Krishna\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\yt_dlp\networking\common.py", line 359, in send
+        return self._send(request)
+               ~~~~~~~~~~^^^^^^^^^
+      File "C:\Users\Krishna\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\yt_dlp\networking\_urllib.py", line 424, in _send
+        raise HTTPError(UrllibResponseAdapter(e.fp), redirect_loop='redirect error' in str(e)) from e
+    yt_dlp.networking.exceptions.HTTPError: HTTP Error 403: Forbidden
+    
+    During handling of the above exception, another exception occurred:
+    
+    Traceback (most recent call last):
+      File "C:\Users\Krishna\OneDrive\Pictures\Screenshots\temp\1_ Social_Media_Videos_Downloader_Project\downloader.py", line 464, in download_one
+        info_dl = ydl.extract_info(url, download=True)
+      File "C:\Users\Krishna\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\yt_dlp\YoutubeDL.py", line 1721, in extract_info
+        return self.__extract_info(url, self.get_info_extractor(key), download, extra_info, process)
+               ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "C:\Users\Krishna\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\yt_dlp\YoutubeDL.py", line 1732, in wrapper
+        return func(self, *args, **kwargs)
+      File "C:\Users\Krishna\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\yt_dlp\YoutubeDL.py", line 1888, in __extract_info
+        return self.process_ie_result(ie_result, download, extra_info)
+               ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "C:\Users\Krishna\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\yt_dlp\YoutubeDL.py", line 1947, in process_ie_result
+        ie_result = self.process_video_result(ie_result, download=download)
+      File "C:\Users\Krishna\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\yt_dlp\YoutubeDL.py", line 3135, in process_video_result
+        self.process_info(new_info)
+        ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+      File "C:\Users\Krishna\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\yt_dlp\YoutubeDL.py", line 195, in wrapper
+        return func(self, *args, **kwargs)
+      File "C:\Users\Krishna\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\yt_dlp\YoutubeDL.py", line 3598, in process_info
+        self.report_error(f'unable to download video data: {err}')
+        ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "C:\Users\Krishna\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\yt_dlp\YoutubeDL.py", line 1166, in report_error
+        self.trouble(f'{self._format_err("ERROR:", self.Styles.ERROR)} {message}', *args, **kwargs)
+        ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "C:\Users\Krishna\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\yt_dlp\YoutubeDL.py", line 1104, in trouble
+        raise DownloadError(message, exc_info)
+    yt_dlp.utils.DownloadError: [0;31mERROR:[0m unable to download video data: HTTP Error 403: Forbidden
