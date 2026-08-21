@@ -1,0 +1,10 @@
+# Core dependency -- needed for BOTH downloader.py and the notebook.
+# This is the library that actually talks to YouTube/Instagram/Facebook
+# and pulls the video down.
+yt-dlp>=2024.1.0
+
+# Needed ONLY if you want to run the Jupyter notebook version
+# (notebooks/video_downloader.ipynb). If you're only running
+# downloader.py from the terminal, you can skip these two.
+ipywidgets>=8.0
+jupyterlab>=4.0

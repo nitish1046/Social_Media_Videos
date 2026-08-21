@@ -1,0 +1,18 @@
+# Downloaded videos and per-run reports -- these are output, not source.
+# Keep the folder itself in git (via .gitkeep) but ignore its contents.
+downloads/*
+!downloads/.gitkeep
+download_summary_*.txt
+
+# Saved "default folder" preference -- this is machine-specific
+# (a path on YOUR computer), so it should never be committed.
+downloader_config.json
+
+# Python cache/build junk
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# Common editor/OS junk
+.vscode/
+.DS_Store
